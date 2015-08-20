@@ -14,6 +14,7 @@
 		4EB1E4C01B8557B700FE4BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB1E4BF1B8557B700FE4BD3 /* Images.xcassets */; };
 		4EB1E4C31B8557B700FE4BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB1E4C11B8557B700FE4BD3 /* LaunchScreen.xib */; };
 		4EB1E4CF1B8557B700FE4BD3 /* FizzBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1E4CE1B8557B700FE4BD3 /* FizzBuzzTests.m */; };
+		4EB1E4E31B8559E100FE4BD3 /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1E4E21B8559E100FE4BD3 /* FizzBuzz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4EB1E4C81B8557B700FE4BD3 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB1E4CD1B8557B700FE4BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB1E4CE1B8557B700FE4BD3 /* FizzBuzzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests.m; sourceTree = "<group>"; };
+		4EB1E4E11B8559E100FE4BD3 /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		4EB1E4E21B8559E100FE4BD3 /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,12 @@
 		4EB1E4B11B8557B700FE4BD3 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				4EB1E4DC1B85598D00FE4BD3 /* Classes */,
+				4EB1E4E01B85599700FE4BD3 /* ThirdParty */,
 				4EB1E4B61B8557B700FE4BD3 /* AppDelegate.h */,
 				4EB1E4B71B8557B700FE4BD3 /* AppDelegate.m */,
 				4EB1E4B91B8557B700FE4BD3 /* ViewController.h */,
 				4EB1E4BA1B8557B700FE4BD3 /* ViewController.m */,
-				4EB1E4BC1B8557B700FE4BD3 /* Main.storyboard */,
-				4EB1E4BF1B8557B700FE4BD3 /* Images.xcassets */,
-				4EB1E4C11B8557B700FE4BD3 /* LaunchScreen.xib */,
 				4EB1E4B21B8557B700FE4BD3 /* Supporting Files */,
 			);
 			path = FizzBuzz;
@@ -96,6 +98,9 @@
 		4EB1E4B21B8557B700FE4BD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4EB1E4BC1B8557B700FE4BD3 /* Main.storyboard */,
+				4EB1E4BF1B8557B700FE4BD3 /* Images.xcassets */,
+				4EB1E4C11B8557B700FE4BD3 /* LaunchScreen.xib */,
 				4EB1E4B31B8557B700FE4BD3 /* Info.plist */,
 				4EB1E4B41B8557B700FE4BD3 /* main.m */,
 			);
@@ -117,6 +122,46 @@
 				4EB1E4CD1B8557B700FE4BD3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EB1E4DC1B85598D00FE4BD3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1E4DE1B85598D00FE4BD3 /* Models */,
+				4EB1E4DF1B85598D00FE4BD3 /* Views */,
+				4EB1E4DD1B85598D00FE4BD3 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4EB1E4DD1B85598D00FE4BD3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4EB1E4DE1B85598D00FE4BD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1E4E11B8559E100FE4BD3 /* FizzBuzz.h */,
+				4EB1E4E21B8559E100FE4BD3 /* FizzBuzz.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4EB1E4DF1B85598D00FE4BD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4EB1E4E01B85599700FE4BD3 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +267,7 @@
 				4EB1E4BB1B8557B700FE4BD3 /* ViewController.m in Sources */,
 				4EB1E4B81B8557B700FE4BD3 /* AppDelegate.m in Sources */,
 				4EB1E4B51B8557B700FE4BD3 /* main.m in Sources */,
+				4EB1E4E31B8559E100FE4BD3 /* FizzBuzz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
