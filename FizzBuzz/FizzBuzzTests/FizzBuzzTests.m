@@ -8,33 +8,50 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "FizzBuzz.h"
 
 @interface FizzBuzzTests : XCTestCase
-
+{
+    FizzBuzz *fizzBuzz;
+}
 @end
 
 @implementation FizzBuzzTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    fizzBuzz = [[FizzBuzz alloc] init];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown
+{
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testFizzBuzz
+{
+    XCTAssert([fizzBuzz isFizzBuzz: 15], @"FizzBuzz passed!");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+- (void)testFizz
+{
+    XCTAssert([fizzBuzz isFizz: 3], @"Fizz passed!");
+}
+
+- (void)testBuzz
+{
+    XCTAssert([fizzBuzz isBuzz: 5], @"Buzz passed!");
+}
+
+- (void)testPerformanceExample
+{
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        
+        [fizzBuzz printFizzBuzzNumbersFromStart: 1 toEnd: 100];
     }];
 }
+
 
 @end
